@@ -1,0 +1,15 @@
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\TourAgenstvo.exe.config
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\TourAgenstvo.exe
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\TourAgenstvo.pdb
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csproj.AssemblyReference.cache
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\MainWindow.g.cs
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\App.g.cs
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo_MarkupCompile.cache
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo_MarkupCompile.lref
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\MainWindow.baml
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.g.resources
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.Properties.Resources.resources
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csproj.GenerateResource.cache
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csproj.CoreCompileInputs.cache
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.exe
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.pdb
