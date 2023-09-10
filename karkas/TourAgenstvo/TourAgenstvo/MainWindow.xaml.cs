@@ -23,11 +23,48 @@ namespace TourAgenstvo
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void Autor_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void reg_Click(object sender, RoutedEventArgs e)
+        {
+            string log = login.Text;
+            string pas = pass.Password;
+            string proo = proof.Password;
+
+            if (log.Length < 5)
+            {
+                login.ToolTip = "Мало символов!";
+                login.Background = Brushes.Red;
+
+            }
+            else if (pas.Length < 5)
+            {
+                pass.ToolTip = "Мало символов!";
+                pass.Background = Brushes.Red;
+            }
+            else if (proo!=pas)
+            {
+                proof.ToolTip = "Повторите попытку!";
+                proof.Background = Brushes.Red;
+            }
+            
+            
+            else
+            {
+                login.ToolTip = "";
+                login.Background = Brushes.Transparent;
+                pass.ToolTip = "";
+                pass.Background = Brushes.Transparent;
+                proof.ToolTip = "";
+                proof.Background = Brushes.Transparent;
+                
+            }
         }
     }
 }

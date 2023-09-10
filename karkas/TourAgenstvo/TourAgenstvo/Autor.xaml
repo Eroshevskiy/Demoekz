@@ -1,0 +1,26 @@
+﻿<Window x:Class="TourAgenstvo.Autor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TourAgenstvo"
+        mc:Ignorable="d"
+        Title="Autor" Height="550" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Background="Orange" Height="44"></Border>
+        <StackPanel Orientation="Horizontal">
+
+
+            <TextBlock Margin="100,0,0,0" Foreground="Black"
+                   FontSize="24" FontFamily="Arial Black" HorizontalAlignment="Center" Height="44" VerticalAlignment="Bottom">
+            Авторизация
+            </TextBlock>
+        </StackPanel>
+        <Button Content="Назад" Margin="311,2,0,0" VerticalAlignment="Top" Width="81" HorizontalAlignment="Left" FontFamily="Verdana" Cursor="Hand" Background="#FF0E0D0D" Foreground="#FFDA7108"/>
+    </Grid>
+</Window>

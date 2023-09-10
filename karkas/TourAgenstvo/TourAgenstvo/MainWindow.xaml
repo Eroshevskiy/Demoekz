@@ -5,23 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TourAgenstvo"
         mc:Ignorable="d"
-        Title="Туристическое агентство" MinHeight="450" MinWidth="800">
-    <Grid Margin="0,-30,-204,0">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Туристическое агентство" MinHeight="455" MinWidth="805" MaxHeight="450" MaxWidth="800">
+    <Grid Margin="0,0,0,5">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Background="Orange" Width="760" Height="100" HorizontalAlignment="Left" Margin="0,29,0,200" VerticalAlignment="Top"></Border>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="760">
-            <Image Source="/Resource/logo.png" Width="110" Margin="5,40,0,292" Height="40" HorizontalAlignment="Center" Stretch="None" />
-            <TextBlock Margin="0,54,0,299" Foreground="Black"
-                   FontSize="22" FontFamily="Arial Black" Width="348"><Run Text="Туристическое агентство"/></TextBlock>
-            <Button Click="Back_Click"
-                    Background="Black" Foreground="Orange"
-                    Width="112" Height="30"
-                    Margin="153,0,300,240" Content="Авторизация" HorizontalAlignment="Right" HorizontalContentAlignment="Center"/>
+
+
+
+        <Border Background="Orange" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+
+        </Border>
+        <StackPanel Orientation="Horizontal">
+
+            <Image Source="images/logo.png" Margin="10,0,0,0" />
+            <TextBlock Margin="40 0 0 0" Foreground="Black"
+                   VerticalAlignment="Center"
+                   FontSize="24" FontFamily="Arial Black"><Run Text="Туристическое агентство"/></TextBlock>
+            <Button Margin="180,9,250,9" Background="Black"  HorizontalAlignment="Right" Width="123" Height="40" Content="Авторизация"  MinWidth="123" MinHeight="40" Foreground="#FFF59F00" BorderBrush="Black" />
+
+            
+            
         </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <TextBox x:Name="login" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,36,583,0" Grid.Row="1" Foreground="#FFE66F0C" FontSize="18" CaretBrush="Black" />
+            <PasswordBox x:Name="pass" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="10,0,583,0" Foreground="#FFE66F0C" FontSize="18" CaretBrush="Black" SelectionBrush="Black"/>
+            <PasswordBox x:Name="proof" materialDesign:HintAssist.Hint="Повторите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="10,0,583,0" Grid.Row="1" Foreground="#FFE66F0C" FontSize="18" CaretBrush="Black" SelectionBrush="Black"/>
+            <Button Content="Зарегистрироваться" Style="{StaticResource MaterialDesignFlatAccentButton}" HorizontalAlignment="Left" Margin="10,100,0,20" VerticalAlignment="Top" Width="167" Background="#FFEA8A00" Foreground="#DD000000" Click="reg_Click"/>
+        </StackPanel>
+        
+
 
     </Grid>
 </Window>

@@ -13,3 +13,15 @@ C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csp
 C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csproj.CoreCompileInputs.cache
 C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.exe
 C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.pdb
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\Autor.g.cs
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\Autor.baml
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\MaterialDesignColors.dll
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\MaterialDesignColors.pdb
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\App.baml
+C:\Users\erosh\source\repos\TourAgenstvo\TourAgenstvo\obj\Debug\TourAgenstvo.csproj.CopyComplete
