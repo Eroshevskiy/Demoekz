@@ -28,7 +28,7 @@
             <TextBlock Margin="40 0 0 0" Foreground="Black"
                    VerticalAlignment="Center"
                    FontSize="24" FontFamily="Arial Black"><Run Text="Туристическое агентство"/></TextBlock>
-            <Button Margin="180,9,250,9" Background="Black"  HorizontalAlignment="Right" Width="123" Height="40" Content="Авторизация"  MinWidth="123" MinHeight="40" Foreground="#FFF59F00" BorderBrush="Black" />
+            <Button Margin="180,9,250,9" Background="Black"  HorizontalAlignment="Right" Width="123" Height="40" Content="Авторизация"  MinWidth="123" MinHeight="40" Foreground="#FFF59F00" BorderBrush="Black" Click="OpenAutor" />
 
             
             

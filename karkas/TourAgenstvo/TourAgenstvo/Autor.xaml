@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TourAgenstvo"
         mc:Ignorable="d"
-        Title="Autor" Height="550" Width="400">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Autor" Height="550" Width="450">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -16,11 +17,18 @@
         <StackPanel Orientation="Horizontal">
 
 
-            <TextBlock Margin="100,0,0,0" Foreground="Black"
+            <TextBlock Margin="130,0,0,0" Foreground="Black"
                    FontSize="24" FontFamily="Arial Black" HorizontalAlignment="Center" Height="44" VerticalAlignment="Bottom">
             Авторизация
             </TextBlock>
         </StackPanel>
-        <Button Content="Назад" Margin="311,2,0,0" VerticalAlignment="Top" Width="81" HorizontalAlignment="Left" FontFamily="Verdana" Cursor="Hand" Background="#FF0E0D0D" Foreground="#FFDA7108"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBox x:Name="login" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="60" TextWrapping="Wrap"  Margin="110,0" Foreground="#FFDA7108" FontSize="18" CaretBrush="Black"/>
+            <PasswordBox x:Name="password" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Foreground="#FFDA7108" FontSize="18" CaretBrush="Black" SelectionBrush="Black" Margin="110,0" Height="60"/>
+            <Button Content="Войти" Margin="110,300,110,0" Height="40" Background="#FF110C1B" BorderBrush="#FF100A1B" Foreground="#FFDA7108"  Click="VhodClick"/>
+
+        </StackPanel>
+        <Button Content="Назад" Margin="350,2,0,0" VerticalAlignment="Top" Width="81" HorizontalAlignment="Left" FontFamily="Verdana" Cursor="Hand" Background="#FF0E0D0D" Foreground="#FFDA7108" BorderBrush="Black" Click="OpenMain"/>
     </Grid>
 </Window>

@@ -23,5 +23,69 @@ namespace TourAgenstvo
         {
             InitializeComponent();
         }
+
+        private void OpenMain(object sender, RoutedEventArgs e)
+        {
+            MainWindow objMainWindow = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            objMainWindow.Show();
+
+        }
+
+        
+
+        private void VhodClick(object sender, RoutedEventArgs e)
+        {
+            string log = login.Text;
+            string pas = password.Password;
+
+            bool hasError = false;
+
+
+            if (log.Length < 5)
+            {
+                login.ToolTip = "Мало символов!";
+                login.BorderBrush = Brushes.Red;
+                hasError = true;
+            }
+            else if (!ContainsEnglishLetters(log))
+            {
+                login.ToolTip = "Нет английских букв!";
+                login.BorderBrush = Brushes.Red;
+                hasError = true;
+            }
+            else
+            {
+                login.ToolTip = "Все хорошо!";
+                login.BorderBrush = Brushes.LimeGreen;
+            }
+
+            if (pas.Length < 5)
+            {
+                password.ToolTip = "Мало символов!";
+                password.BorderBrush = Brushes.Red;
+                hasError = true;
+            }
+            else
+            {
+                password.ToolTip = "Все хорошо!";
+                password.BorderBrush = Brushes.LimeGreen;
+            }
+
+            if (!hasError)
+            {
+                MainWindow MainWindow = new MainWindow();
+                MainWindow.Show();
+
+
+                Close();
+            }
+        }
+
+        private bool ContainsEnglishLetters(string input)
+        {
+            
+            return input.Any(char.IsLetter) && input.Any(char.IsLetterOrDigit);
+        }
     }
 }

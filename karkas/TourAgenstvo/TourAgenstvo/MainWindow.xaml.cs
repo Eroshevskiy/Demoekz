@@ -37,34 +37,78 @@ namespace TourAgenstvo
             string pas = pass.Password;
             string proo = proof.Password;
 
+            bool hasError = false; 
+
             if (log.Length < 5)
             {
                 login.ToolTip = "Мало символов!";
-                login.Background = Brushes.Red;
-
+                login.BorderBrush = Brushes.Red; 
+                hasError = true; 
             }
-            else if (pas.Length < 5)
+            else if (!ContainsEnglishLetters(log))
             {
-                pass.ToolTip = "Мало символов!";
-                pass.Background = Brushes.Red;
+                login.ToolTip = "Нет английских букв!";
+                login.BorderBrush = Brushes.Red;
+                hasError = true; 
             }
-            else if (proo!=pas)
-            {
-                proof.ToolTip = "Повторите попытку!";
-                proof.Background = Brushes.Red;
-            }
-            
-            
             else
             {
-                login.ToolTip = "";
-                login.Background = Brushes.Transparent;
-                pass.ToolTip = "";
-                pass.Background = Brushes.Transparent;
-                proof.ToolTip = "";
-                proof.Background = Brushes.Transparent;
-                
+                login.ToolTip = "Все хорошо!";
+                login.BorderBrush = Brushes.LimeGreen; 
             }
+
+            if (pas.Length < 5)
+            {
+                pass.ToolTip = "Мало символов!";
+                pass.BorderBrush = Brushes.Red;
+                hasError = true; 
+            }
+            else
+            {
+                pass.ToolTip = "Все хорошо!";
+                pass.BorderBrush = Brushes.LimeGreen;
+            }
+
+            if (proo != pas)
+            {
+                proof.ToolTip = "Повторите попытку!";
+                proof.BorderBrush = Brushes.Red;
+                hasError = true; 
+            }
+            else
+            {
+                proof.ToolTip = "Все хорошо!";
+                proof.BorderBrush = Brushes.LimeGreen;
+            }
+
+            if (!hasError)
+            {
+                Autor AutorWindow = new Autor (); 
+                AutorWindow.Show();
+
+                
+                Close();
+            }
+        }
+
+        private bool ContainsEnglishLetters(string input)
+        {
+            
+            return input.Any(char.IsLetter) && input.Any(char.IsLetterOrDigit);
+        }
+
+
+
+
+
+
+
+
+        private void OpenAutor(object sender, RoutedEventArgs e)
+        {
+            Autor objAutor = new Autor();
+            this.Visibility = Visibility.Hidden;
+            objAutor.Show();
         }
     }
 }
