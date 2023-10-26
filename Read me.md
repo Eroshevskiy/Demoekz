@@ -23,3 +23,4 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 
 
+https://docs.google.com/document/d/1w1sBTWkzmk1N2A0kz10kNiWXzZzOcyia0fqDIDiVP6U/edit - алгоритм
