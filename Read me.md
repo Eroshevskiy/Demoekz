@@ -25,3 +25,6 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 https://docs.google.com/document/d/1w1sBTWkzmk1N2A0kz10kNiWXzZzOcyia0fqDIDiVP6U/edit - алгоритм
 ![shema](https://github.com/Eroshevskiy/Demoekz/assets/97594146/222faef4-d9f5-45e5-84b7-8fc6bbad237a) - схема приложения
+
+
+https://drive.google.com/drive/u/1/folders/1y8gXLctTAeEFOTLenUkA4vpekOkm_eMK - новый диск 
